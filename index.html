@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Lakers — Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Lakers Logo" class="logo">
+        <span id="hamburger" onclick="toggleMenu()">☰</span>
+        <navbar id="nav">
+            <a href="index.html">Главная</a>
+            <a href="pages/history.html">История</a>
+            <a href="pages/players.html">Игроки</a>
+            <a href="pages/achievements.html">Достижения</a>
+            <a href="pages/gallery.html">Галерея</a>
+            <a href="pages/contacts.html">Контакты</a>
+        </navbar>
+    </header>
+
+    <main>
+        <section id="index">
+            <div class="index-info">
+                <h1>Los Angeles Lakers</h1>
+                <br><br>
+                <a href="pages/history.html" class="link-index">Узнать историю команды →</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Добро пожаловать!</h2>
+            <p>
+                Los Angeles Lakers — одна из самых успешных и узнаваемых баскетбольных команд в мире.
+                Команда выступает в Национальной баскетбольной ассоциации (НБА) и является членом
+                Тихоокеанского дивизиона Западной конференции. За свою долгую историю «Лейкерс»
+                завоевали 17 чемпионских титулов НБА, что делает их одной из самых титулованных
+                франшиз в истории лиги.
+            </p>
+            <p>
+                Домашняя арена команды — Crypto.com Arena (ранее Staples Center), расположенная
+                в самом сердце Лос-Анджелеса, Калифорния. Фирменные цвета команды — золотой и
+                фиолетовый — стали символом величия и славы в мире баскетбола. На этом сайте вы
+                узнаете об истории команды, её легендарных игроках и выдающихся достижениях.
+            </p>
+        </section>
+
+        <section style="background-color: #f3deca40;">
+            <h2>Быстрые факты</h2>
+            <div class="row">
+                <div class="col-50">
+                    <ul>
+                        <li>Основаны в <strong>1947 году</strong> в Миннеаполисе</li>
+                        <li>Переехали в Лос-Анджелес в <strong>1960 году</strong></li>
+                        <li>Домашняя арена — <strong>Crypto.com Arena</strong></li>
+                        <li>Вместимость арены — <strong>18 997 зрителей</strong></li>
+                    </ul>
+                </div>
+                <div class="col-50">
+                    <ul>
+                        <li><strong>17 чемпионских титулов</strong> НБА</li>
+                        <li>Цвета: <strong>фиолетовый и золотой</strong></li>
+                        <li>Конференция: <strong>Западная</strong></li>
+                        <li>Дивизион: <strong>Тихоокеанский</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Информационный сайт о Los Angeles Lakers. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav').classList.toggle('mobile');
+        }
+    </script>
+</body>
+</html>

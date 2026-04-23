@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Lakers — Галерея</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Lakers Logo" class="logo">
+        <span id="hamburger" onclick="toggleMenu()">☰</span>
+        <navbar id="nav">
+            <a href="../index.html">Главная</a>
+            <a href="history.html">История</a>
+            <a href="players.html">Игроки</a>
+            <a href="achievements.html">Достижения</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+        </navbar>
+    </header>
+
+    <main>
+        <section>
+            <h1>Галерея</h1>
+
+            <h2 class="centered">Видео: лучшие моменты Lakers</h2>
+            <iframe class="vframe" src="https://www.youtube.com/embed/LAr6oAKieHk"
+                    title="Lakers Best Moments" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section style="background-color: #f3deca40;">
+            <h2 class="centered">Фотогалерея</h2>
+            <div class="row">
+                <div class="col-50">
+                    <img src="../img/gallery1.jpg" alt="Lakers Championship" class="gallery-img">
+                </div>
+                <div class="col-50">
+                    <img src="../img/gallery2.jpg" alt="Lakers Game" class="gallery-img">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-50">
+                    <img src="../img/gallery3.jpg" alt="Lakers Arena" class="gallery-img">
+                </div>
+                <div class="col-50">
+                    <img src="../img/gallery4.jpg" alt="Lakers Fans" class="gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="centered">Коби Брайант — 81 очко</h2>
+            <iframe class="vframe" src="https://www.youtube.com/embed/wV9CMVdY3dM"
+                    title="Kobe 81 Points" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Информационный сайт о Los Angeles Lakers. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav').classList.toggle('mobile');
+        }
+    </script>
+</body>
+</html>
